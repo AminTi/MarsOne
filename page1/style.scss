@@ -1,0 +1,68 @@
+@import 'main';
+@import 'header';
+@import 'desk';
+@import 'footer';
+
+
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #061b38;
+    border-bottom: 5px solid rgb(172, 71, 71);
+}
+
+
+
+.nav__img {
+    width: 60px;
+    height: 30px;
+}
+
+.menu {
+
+    color: white;
+    font-size: 20px;
+    padding: 3px 5px;
+    margin-left: auto;
+
+}
+
+nav>.nav__main-list {
+    display: none;
+    background: #061b38;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    border-top: 1px solid rgb(172, 71, 71);
+    margin: 2%;
+
+    li {
+        list-style: none;
+        margin: 2%;
+        border: 1px solid rgb(172, 71, 71);
+        margin-left: -10%;
+
+
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 20px;
+        color: whitesmoke;
+        border-bottom: 2px solid rgb(172, 71, 71);
+    }
+}
+
+nav:hover {
+    .nav__main-list {
+        display: block;
+    }
+}

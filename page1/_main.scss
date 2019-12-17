@@ -1,0 +1,165 @@
+main {
+    background: #f1f1f1;
+    height: 100%;
+}
+
+.section__one {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 350px;
+    margin-top: 10px;
+    background: white;
+    justify-content: center;
+
+    .section__one-article {
+        background: white;
+        margin: 5;
+        padding: 5px 10px;
+
+
+    }
+
+    .section__one-img {
+        background: white;
+
+    }
+}
+
+.section__one-h2 {
+    color: #e32700;
+}
+
+
+
+
+.section_one-paragraph {
+    span {
+        color: #e32700;
+    }
+
+}
+
+.section__one-img {
+    padding: 0% 2%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+
+
+    }
+}
+
+
+
+// ===== Section 2 =====
+.section__two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    // padding: 0% 2%;
+    margin: 5px 10px;
+    padding-bottom: 5%;
+}
+
+.section__two-img {
+
+
+    img {
+        width: 50%;
+        height: 50%;
+        margin-top: 5%;
+    }
+}
+
+.section__two-h2 {
+    display: flex;
+    justify-content: center;
+    color: #2c4f80;
+    align-content: center;
+    margin: 5%;
+    text-align: center;
+}
+
+.section__two-article {
+    background: white;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+
+    h3 {
+        color: #e32700;
+    }
+
+    a {
+        border: 1px solid #2c4f80;
+        text-decoration: none;
+        color: #2c4f80;
+        padding: 3px 3px;
+        border-radius: 20%;
+    }
+
+}
+
+// === section 2 art 2 === 
+
+.section__two-article2 {
+    padding: 5px 5px;
+    background: white;
+    padding-bottom: 10px;
+
+
+    a {
+        border: 1px solid #2c4f80;
+        text-decoration: none;
+        color: #2c4f80;
+        padding: 3px 3px;
+        border-radius: 20%;
+
+    }
+
+}
+
+.section__two-article2-h2 {
+    color: #e32700;
+}
+
+.section__two-article2-img {
+    width: 100%;
+    height: 100%;
+    padding: 5% 0%;
+}
+
+// === section 2 art 3 ===
+.section__2-article3 {
+    background: white;
+    margin-top: 10px;
+    padding: 5px 5px;
+    padding-bottom: 10px;
+
+
+    h3 {
+        color: #e32700;
+
+    }
+
+    a {
+        border: 1px solid #2c4f80;
+        text-decoration: none;
+        color: #2c4f80;
+        padding: 3px 3px;
+        border-radius: 20%;
+    }
+}
+
+.section__two-article3-img {
+    // padding-top: 5%;
+
+    img {
+        width: 70%;
+        height: 70%;
+    }
+}

@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+body {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #061b38;
+  border-bottom: 5px solid #ac4747;
+}
+
+.nav__img {
+  width: 60px;
+  height: 30px;
+}
+
+.menu3 {
+  color: white;
+  font-size: 20px;
+  padding: 3px 5px;
+  margin-left: auto;
+}
+
+nav > .nav__main-list {
+  display: none;
+  background: #061b38;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  border-top: 1px solid #ac4747;
+  margin: 2%;
+}
+
+nav > .nav__main-list li {
+  list-style: none;
+  margin: 2%;
+  border: 1px solid #ac4747;
+  margin-left: -10%;
+}
+
+nav > .nav__main-list a {
+  text-decoration: none;
+  font-size: 20px;
+  color: whitesmoke;
+  border-bottom: 2px solid #ac4747;
+}
+
+nav:hover .nav__main-list {
+  display: block;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0%;
+  padding: 0%;
+  background-image: url("bilder3/hero-3.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+header p {
+  color: #d1e0f3;
+  font-weight: bolder;
+}
+
+header article {
+  text-align: center;
+  font-size: 20px;
+}
+
+main {
+  background: #ffffff;
+}
+
+.main__page3-article1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: centeR;
+      -ms-flex-align: centeR;
+          align-items: centeR;
+  text-align: center;
+}
+
+.main__page3-article1 h2 {
+  color: #e32700;
+}
+
+.main__page3-article1 p {
+  color: #2c4f80;
+  width: 50%;
+}
+
+.main__page3-section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #f1f1f1;
+  padding-left: 10px;
+  padding-right: 10px;
+  gap: 10px;
+  min-height: 450px;
+}
+
+.main__page3-section1 ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+label {
+  color: #e32700;
+}
+
+input {
+  border: 1px solid #2c4f80;
+}
+
+textarea {
+  border: 1px solid #2c4f80;
+  width: 70%;
+}
+/*# sourceMappingURL=mobilefirst.css.map */
