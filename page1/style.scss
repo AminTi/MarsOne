@@ -1,14 +1,15 @@
-@import 'main';
-@import 'header';
+@import "header";
+@import "main";
 @import 'desk';
-@import 'footer';
-
+@import "footer";
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
 body {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+    font-family: "Montserrat";
+
     font-size: 16px;
 }
 
@@ -44,6 +45,8 @@ nav>.nav__main-list {
     border-top: 1px solid rgb(172, 71, 71);
     margin: 2%;
 
+
+
     li {
         list-style: none;
         margin: 2%;
@@ -66,3 +69,5 @@ nav:hover {
         display: block;
     }
 }
+
+@import "desknav";

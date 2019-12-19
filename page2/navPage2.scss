@@ -1,8 +1,14 @@
+@import "mainpage2";
+@import "footer2";
+
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
 body {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+    font-family: "Montserrat";
     font-size: 16px;
 }
 
@@ -73,7 +79,7 @@ header {
     display: flex;
     margin: 0%;
     padding: 0%;
-    background-image: url("bilder/header2/yuliya-kosolapova-p-z-xf-ir-j-mt-e-unsplash.jpg");
+
     background-repeat: no-repeat;
     width: 100%;
     height: 50vh;
@@ -81,6 +87,9 @@ header {
     background-position: center;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to bottom, #c1555587 1%, #24020277),
+        url("bilder/main2/hero-2.jpg");
+
 
     h1 {
         color: #ffffff;
@@ -110,3 +119,5 @@ main {
 .section__one-page2 {
     background: #f1f1f1;
 }
+
+@import "desk2";

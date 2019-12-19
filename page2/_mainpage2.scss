@@ -4,6 +4,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
 
+
     h2 {
         color: #e32700;
     }
@@ -70,7 +71,6 @@ main {
     background: #ffffff;
     padding: 5px 10px;
     margin: 10px;
-
 }
 
 
@@ -92,32 +92,55 @@ main {
 
 //=== section 2 page 2 ====
 .section__two-page2 {
-    display: flex;
-    flex: wrap;
-    justify-content: space-between;
-    justify-content: space-evenly;
-    padding: 1px 10px;
 
-    h3 {
-        color: #e32700;
-
-    }
+    // display: flex;
+    // flex-direction: column;
+    background: #ffffff;
+    margin: 5%;
 }
 
 .section__two-page2-article1 {
     display: flex;
-    flex-wrap: wrap;
-    background: #ffffff;
-    padding: 5px 10px;
-    margin: 10px;
+    flex-direction: column;
+    padding: 10px 10px;
 
 }
 
 .section__two-page2-article1-img {
+    display: flex;
+    flex-direction: column;
+    background-image: url("bilder/main2/hero-2.jpg");
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 70%;
+    height: 70%;
+    min-height: 300px;
+}
 
-    img {
-        width: 100%;
-        height: 100%;
-        border-radius: 20px;
-    }
+
+.img-wrapper {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-wrapper-1 {
+    width: 20px;
+    height: 20px;
+    padding: 60px;
+}
+
+.img-wrapper-2 {
+    width: 40px;
+    height: 40px;
+}
+
+.img-wrapper-3 {
+    width: 30px;
+    height: 30px;
+    padding: 30px;
 }

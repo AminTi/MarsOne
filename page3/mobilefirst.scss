@@ -1,8 +1,11 @@
+@import "footer3";
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
 body {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+    font-family: "Montserrat";
     font-size: 18px;
 }
 
@@ -25,15 +28,12 @@ nav {
 
 }
 
-.menu3 {
+.menu {
 
     color: white;
     font-size: 20px;
     padding: 3px 5px;
     margin-left: auto;
-
-
-
 }
 
 nav>.nav__main-list {
@@ -75,7 +75,8 @@ header {
     display: flex;
     margin: 0%;
     padding: 0%;
-    background-image: url("bilder3/hero-3.jpg");
+    background-image: linear-gradient(to bottom, #24020277 1%, #c1555582), url("bilder3/hero-3.jpg");
+
     background-repeat: no-repeat;
     width: 100%;
     height: 50vh;
@@ -183,6 +184,6 @@ textarea {
     width: 70%;
 
     // margin-top: -10%;
-
-
 }
+
+@import "desk3";

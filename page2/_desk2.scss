@@ -59,7 +59,7 @@
     }
 
     ul li a:hover {
-        color: rgb(172, 71, 71);
+        border-bottom: 2px solid rgb(172, 71, 71);
         transition: all linear 500ms;
 
         nav {
@@ -208,32 +208,42 @@
     }
 
 
-    // ==== section 2 page 2 ===
+    // ===section 2 page 2====
+    .section__two-page2 {
+        margin: 0%;
+        padding: 0%;
+    }
 
     .section__two-page2-article1 {
-
         display: grid;
-        grid-template-columns: 0.7fr 1.3fr;
-        grid-template-areas: "photo text-1";
-        gap: 15px;
-        background-color: #ffffff;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "leftPhoto righttext";
+        gap: 20px;
+        min-height: 400px;
+        margin: 0%;
+        padding: 0%;
 
 
 
     }
 
+    .section__two-page2-subarticle {
+        grid-area: righttext;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
 
-}
+        h3 {
+            color: #e32700;
+        }
+    }
 
-.section__two-page2-subarticle {
-    grid-area: text-1;
-    display: flex;
-    flex-wrap: wrap;
-    align-self: center;
-    padding: 5px 2%;
-}
+    .section__two-page2-article1-img {
+        grid-area: leftPhoto;
+        width: 100%;
+        height: 100%;
 
-.section__two-page2-article1-img {
-    grid-area: photo;
+    }
 }
