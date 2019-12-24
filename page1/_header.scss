@@ -10,7 +10,12 @@ header {
     background-size: cover;
     background-position: center;
     justify-content: center;
-    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+    // display: flex;
+    // justify-content: flex-end;
+    // align-items: flex-start;
 
 
     h1 {
@@ -37,11 +42,7 @@ header article {
 
 header {
 
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+
 
 
 
@@ -51,6 +52,9 @@ header {
         flex-direction: column;
         margin: 10%;
 
+        p {
+            color: #436dac;
+        }
 
     }
 
@@ -76,7 +80,7 @@ header::after {
     transform: rotate(10deg);
     top: -70vh;
     left: -10vh;
-    border: 15px solid rgb(172, 71, 71);
+    border: 15px solid #5e97e282;
 
 }
 

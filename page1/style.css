@@ -15,9 +15,8 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 header h1 {
@@ -37,20 +36,6 @@ header article {
   width: 50%;
 }
 
-header {
-  position: relative;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
 header article {
   z-index: 100;
   display: -webkit-box;
@@ -61,6 +46,10 @@ header article {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 10%;
+}
+
+header article p {
+  color: #436dac;
 }
 
 header > article {
@@ -81,7 +70,7 @@ header::after {
           transform: rotate(10deg);
   top: -70vh;
   left: -10vh;
-  border: 15px solid #ac4747;
+  border: 15px solid #5e97e282;
 }
 
 main {
@@ -93,8 +82,10 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   min-height: 350px;
   margin-top: 10px;
@@ -136,12 +127,14 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
+  padding: 10px 10px;
   margin: 5px 10px;
   padding-bottom: 5%;
 }
@@ -163,6 +156,9 @@ main {
   -ms-flex-line-pack: center;
       align-content: center;
   margin: 5%;
+}
+
+.grid-container {
   text-align: center;
 }
 
@@ -170,6 +166,7 @@ main {
   background: white;
   padding-bottom: 10px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .section__two-article h3 {
@@ -235,20 +232,30 @@ main {
 @media (min-width: 600px) {
   header {
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   header > article {
     font-size: 40px;
+    margin: 5%;
   }
   header::after {
     width: 130vw;
     height: 150vh;
     top: -70vh;
     left: -11vh;
-    border: 15px solid #ac4747;
+    border: 15px solid #5e97e28c;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 720px) {
   main {
     margin: 0%;
   }
@@ -341,6 +348,7 @@ main {
         grid-template-areas: "block1 aside" "block2 aside";
     margin: 5% 10%;
     gap: 20px;
+    text-align: unset;
   }
   .section__two-article {
     -ms-grid-row: 1;
@@ -352,14 +360,17 @@ main {
     -ms-grid-columns: 0.5fr 1.5fr;
         grid-template-columns: 0.5fr 1.5fr;
         grid-template-areas: "bild text1";
-    gap: 20px;
+    gap: 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     padding: 5px 5px;
+    text-align: unset;
   }
   .section__two-article img {
     width: 130px;
@@ -394,6 +405,7 @@ main {
         grid-template-rows: 0.5fr 1fr;
         grid-template-areas: "bild1" " text2";
     gap: 20px;
+    text-align: center;
   }
   .section__two-article2-img {
     -ms-grid-row: 1;
@@ -449,9 +461,11 @@ main {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: text4;
+    padding: 20px 5px;
   }
   footer {
     margin: 0%;
+    padding: 100px 0px;
   }
 }
 
