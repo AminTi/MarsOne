@@ -13,9 +13,9 @@ header {
 
     position: relative;
     overflow: hidden;
-    // display: flex;
-    // justify-content: flex-end;
-    // align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
     h1 {
@@ -32,25 +32,16 @@ header {
 
 }
 
-header article {
-    text-align: center;
-    font-size: 20px;
-    width: 50%;
-}
-
-
-
 header {
-
-
-
-
 
     article {
         z-index: 100;
         display: flex;
         flex-direction: column;
-        margin: 10%;
+        // margin: 10%;
+        text-align: center;
+        // font-size: 20px;
+        width: 250px;
 
         p {
             color: #436dac;
@@ -60,15 +51,6 @@ header {
 
 }
 
-header>article {
-
-
-    width: 500px;
-    height: 100px;
-    font-size: 25px;
-
-
-}
 
 header::after {
     position: absolute;

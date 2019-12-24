@@ -17,6 +17,11 @@ header {
           justify-content: center;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header h1 {
@@ -31,12 +36,6 @@ header p {
 }
 
 header article {
-  text-align: center;
-  font-size: 20px;
-  width: 50%;
-}
-
-header article {
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,17 +44,12 @@ header article {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 10%;
+  text-align: center;
+  width: 250px;
 }
 
 header article p {
   color: #436dac;
-}
-
-header > article {
-  width: 500px;
-  height: 100px;
-  font-size: 25px;
 }
 
 header::after {
@@ -243,6 +237,7 @@ main {
             align-items: flex-start;
   }
   header > article {
+    width: 500px;
     font-size: 40px;
     margin: 5%;
   }
